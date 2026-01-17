@@ -49,6 +49,14 @@ cp .env.example .env.local
 npm run dev
 ```
 
+## Deploy to Netlify
+1) Create a new Netlify site connected to this repo.
+2) In Netlify → Site configuration → Environment variables, add everything from `.env.example`.
+3) Build settings should use:
+   - Build command: `npm run build`
+   - Publish directory: `.next` (handled automatically by `@netlify/plugin-nextjs`)
+4) Deploy.
+
 ## Admin / CRM
 - Login: `/admin/login`
 - CRM: `/admin/crm`
