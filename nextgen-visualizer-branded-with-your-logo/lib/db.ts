@@ -1,11 +1,12 @@
 import Database from "better-sqlite3";
+import type { Database as SqliteDatabase } from "better-sqlite3";
 import fs from "node:fs";
 import path from "node:path";
 
 const dataDir = path.join(process.cwd(), "data");
 const dbPath = path.join(dataDir, "app.db");
 
-let db: Database.Database | null = null;
+let db: SqliteDatabase | null = null;
 
 export function getDb() {
   if (db) return db;
