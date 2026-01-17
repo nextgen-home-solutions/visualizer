@@ -1,0 +1,136 @@
+{
+  "categories": [
+    {
+      "id": "cabinets",
+      "name": "Cabinets",
+      "items": [
+        {
+          "sku": "HD-CAB-001",
+          "name": "White Shaker Base Cabinet (30in)",
+          "brand": "Hampton Bay",
+          "price": 179.0,
+          "unit": "each",
+          "image": "/products/cabinet_shaker_white.svg"
+        },
+        {
+          "sku": "HD-CAB-002",
+          "name": "Espresso Shaker Wall Cabinet (30in)",
+          "brand": "Hampton Bay",
+          "price": 149.0,
+          "unit": "each",
+          "image": "/products/cabinet_shaker_espresso.svg"
+        }
+      ]
+    },
+    {
+      "id": "countertops",
+      "name": "Countertops",
+      "items": [
+        {
+          "sku": "HD-CT-001",
+          "name": "Quartz Countertop - Carrara Look",
+          "brand": "MSI",
+          "price": 72.0,
+          "unit": "sqft",
+          "image": "/products/quartz_carrara.svg"
+        },
+        {
+          "sku": "HD-CT-002",
+          "name": "Granite Countertop - Black Pearl",
+          "brand": "Prefab",
+          "price": 58.0,
+          "unit": "sqft",
+          "image": "/products/granite_black.svg"
+        }
+      ]
+    },
+    {
+      "id": "flooring",
+      "name": "Flooring",
+      "items": [
+        {
+          "sku": "HD-FLR-001",
+          "name": "LVP Flooring - Natural Oak (20mil)",
+          "brand": "Lifeproof",
+          "price": 3.49,
+          "unit": "sqft",
+          "image": "/products/lvp_oak.svg"
+        },
+        {
+          "sku": "HD-FLR-002",
+          "name": "Porcelain Tile - Matte Concrete Grey",
+          "brand": "Daltile",
+          "price": 2.89,
+          "unit": "sqft",
+          "image": "/products/tile_concrete.svg"
+        }
+      ]
+    },
+    {
+      "id": "tile",
+      "name": "Tile / Backsplash",
+      "items": [
+        {
+          "sku": "HD-TILE-001",
+          "name": "Subway Tile - Bright White (3x6)",
+          "brand": "MSI",
+          "price": 1.79,
+          "unit": "sqft",
+          "image": "/products/subway_white.svg"
+        },
+        {
+          "sku": "HD-TILE-002",
+          "name": "Hex Mosaic - Marble Look",
+          "brand": "Jeffrey Court",
+          "price": 9.99,
+          "unit": "sqft",
+          "image": "/products/hex_marble.svg"
+        }
+      ]
+    },
+    {
+      "id": "paint",
+      "name": "Paint",
+      "items": [
+        {
+          "sku": "HD-PNT-001",
+          "name": "Interior Paint - Ultra White (1 gal)",
+          "brand": "BEHR",
+          "price": 42.98,
+          "unit": "gallon",
+          "image": "/products/paint_white.svg"
+        },
+        {
+          "sku": "HD-PNT-002",
+          "name": "Interior Paint - Soft Greige (1 gal)",
+          "brand": "BEHR",
+          "price": 42.98,
+          "unit": "gallon",
+          "image": "/products/paint_greige.svg"
+        }
+      ]
+    },
+    {
+      "id": "fixtures",
+      "name": "Fixtures",
+      "items": [
+        {
+          "sku": "HD-FIX-001",
+          "name": "Kitchen Faucet - Matte Black Pull-Down",
+          "brand": "Delta",
+          "price": 229.0,
+          "unit": "each",
+          "image": "/products/faucet_black.svg"
+        },
+        {
+          "sku": "HD-FIX-002",
+          "name": "Bathroom Vanity Light - 3-Light Brushed Nickel",
+          "brand": "Hampton Bay",
+          "price": 89.0,
+          "unit": "each",
+          "image": "/products/vanity_light.svg"
+        }
+      ]
+    }
+  ]
+}
