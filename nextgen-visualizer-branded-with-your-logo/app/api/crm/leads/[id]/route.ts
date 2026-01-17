@@ -1,10 +1,15 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { supabaseServer } from "../../../../../lib/supabase";
 import { requireAdminFromRequest } from "../../../../../lib/adminAuth";
 
-export async function GET(req: Request, { params }: { params: { id: string } }) {
+export async function GET(
+  req: NextRequest,
+  { params }: { params: Promise<{ id: string }> }
+) {
   const auth = await requireAdminFromRequest(req);
   if (!auth.ok) return NextResponse.json({ error: auth.error }, { status: auth.status });
+
+  const { id } = await params;
 
   try {
     const sb = supabaseServer();
@@ -12,7 +17,7 @@ export async function GET(req: Request, { params }: { params: { id: string } }) 
     const { data, error } = await sb
       .from("nextgen_visualizer_projects")
       .select("*")
-      .eq("id", params.id)
+      .eq("id", id)
       .single();
 
     if (error) return NextResponse.json({ error: "Not found" }, { status: 404 });
@@ -20,13 +25,13 @@ export async function GET(req: Request, { params }: { params: { id: string } }) 
     const notes = await sb
       .from("nextgen_visualizer_notes")
       .select("*")
-      .eq("lead_id", params.id)
+      .eq("lead_id", id)
       .order("created_at", { ascending: false });
 
     const tasks = await sb
       .from("nextgen_visualizer_tasks")
       .select("*")
-      .eq("lead_id", params.id)
+      .eq("lead_id", id)
       .order("completed", { ascending: true })
       .order("due_at", { ascending: true });
 

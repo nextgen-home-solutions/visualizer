@@ -1,0 +1,10 @@
+[build]
+  base = "nextgen-visualizer-branded-with-your-logo"
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20.9.0"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
